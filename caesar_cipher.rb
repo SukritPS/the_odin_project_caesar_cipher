@@ -1,4 +1,4 @@
-def caesar_cipher(string, shift=5)
+def caesar_cipher(string, shift = 5)
   string.chars.map do |char|
     if char.match?(/[a-zA-z]/)
       shift.times { char = char.next }
